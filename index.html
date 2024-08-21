@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>haloow!</strong>
+                        <p>
+                            haloo cintaa, sorry for bothering you. aku tw km cape sepertinya denger kata semangat hshs
+                            semangat kuliah and ujiannya yaa! semoga besok ujiannya lancar and do not ovt too much, so proud of youu
+                            keep goingg !1!1 YAAAAAYYYYY i know surviving each day feels so heavy for u terutama di smt 3 inih,,, tp jgn lupa
+                            istirahat ya, im here if u need a company ^^
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
